@@ -12,12 +12,63 @@ import products from "../data/product.json";
 */
 
 const CATEGORIES = [
-  { title: "Modular Kitchen", slug: "modular-kitchen", subtitle: "HDHMR, Wooden, Aluminium" },
-  { title: "3D Wall Panel", slug: "3d-wall-panel", subtitle: "Luxury textures & patterns" },
-  { title: "PVC Ceiling", slug: "pvc-ceiling-panel", subtitle: "Lightweight & waterproof" },
-  { title: "WPC Wall Panel", slug: "wpc-wall-panel", subtitle: "Durable & elegant" },
-  { title: "Charcoal Panel", slug: "charcoal-panel", subtitle: "Bold 3D finishes" },
-  { title: "Luxury Interiors", slug: "luxury-shop-interior", subtitle: "Showroom & shop fitouts" },
+  {
+    title: "Modular Kitchen",
+    slug: "modular-kitchen",
+    subtitle: "HDHMR, Wooden, Aluminium",
+  },
+  {
+    title: "3D Wall Panel",
+    slug: "3d-wall-panel",
+    subtitle: "Luxury textures & patterns",
+  },
+  {
+    title: "PVC Ceiling",
+    slug: "pvc-ceiling-panel",
+    subtitle: "Lightweight & waterproof",
+  },
+  {
+    title: "WPC Wall Panel",
+    slug: "wpc-wall-panel",
+    subtitle: "Durable & elegant",
+  },
+  {
+    title: "Charcoal Panel",
+    slug: "charcoal-panel",
+    subtitle: "Bold 3D finishes",
+  },
+  {
+    title: "Luxury Interiors",
+    slug: "luxury-shop-interior",
+    subtitle: "Showroom & shop fitouts",
+  },
+
+  // NEW CATEGORIES ↓↓↓
+  {
+    title: "Home Interior",
+    slug: "home-interior",
+    subtitle: "Complete interior solutions",
+  },
+  {
+    title: "Flat Interior",
+    slug: "flat-interior",
+    subtitle: "2BHK / 3BHK interiors",
+  },
+  {
+    title: "Home Renovation",
+    slug: "home-renovation",
+    subtitle: "Full home transformation",
+  },
+  {
+    title: "Flat Renovation",
+    slug: "flat-renovation",
+    subtitle: "Kitchen + Living + Bedroom",
+  },
+  {
+    title: "Floated Wall Panel",
+    slug: "floated-wall-panel",
+    subtitle: "Modern floating panels",
+  },
 ];
 
 export default function Home() {
@@ -54,11 +105,14 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              The Interior Hub — <span className="text-amber-600">Premium Interiors</span> for every space
+              The Interior Hub —{" "}
+              <span className="text-amber-600">Premium Interiors</span> for
+              every space
             </h1>
             <p className="text-slate-600 max-w-xl">
-              Modular kitchens, 3D wall panels, PVC & WPC panels, and luxury store interiors — curated designs,
-              realistic previews and fast quotes. Get a premium look without the premium hassle.
+              Modular kitchens, 3D wall panels, PVC & WPC panels, and luxury
+              store interiors — curated designs, realistic previews and fast
+              quotes. Get a premium look without the premium hassle.
             </p>
 
             <div className="flex gap-3 items-center">
@@ -68,28 +122,50 @@ export default function Home() {
                 aria-label="Explore Modular Kitchens"
               >
                 Explore Kitchens
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
                 </svg>
               </Link>
 
               <button
-                onClick={() => window.scrollTo({ top: 800, behavior: "smooth" })}
+                onClick={() =>
+                  window.scrollTo({ top: 800, behavior: "smooth" })
+                }
                 className="px-4 py-3 rounded-lg bg-white border border-slate-200 text-slate-700 hover:shadow-md transition"
               >
                 View Catalog
               </button>
+
+              <Link
+                to="/contact"
+                className="px-4 py-3 rounded-lg bg-white border border-slate-200 text-slate-700 hover:shadow-md transition inline-block"
+              >
+                Contact Us
+              </Link>
             </div>
 
             <div className="mt-6 flex flex-wrap gap-3 text-sm text-slate-500">
               <div className="inline-flex items-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-amber-500" /> Free Quote
+                <span className="inline-block w-2 h-2 rounded-full bg-amber-500" />{" "}
+                Free Quote
               </div>
               <div className="inline-flex items-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-sky-500" /> 2–3 day mockups
+                <span className="inline-block w-2 h-2 rounded-full bg-sky-500" />{" "}
+                2–3 day mockups
               </div>
               <div className="inline-flex items-center gap-2">
-                <span className="inline-block w-2 h-2 rounded-full bg-emerald-500" /> Easy installation
+                <span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />{" "}
+                Easy installation
               </div>
             </div>
           </div>
@@ -125,9 +201,24 @@ export default function Home() {
             >
               <div className="w-12 h-12 rounded-md bg-slate-100 flex items-center justify-center text-amber-500 group-hover:bg-amber-50 transition">
                 {/* simple svg icon */}
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 7v10a1 1 0 0 0 1 1h4V6H4a1 1 0 0 0-1 1z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14 6v12h5a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-5z" />
+                <svg
+                  className="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M3 7v10a1 1 0 0 0 1 1h4V6H4a1 1 0 0 0-1 1z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M14 6v12h5a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-5z"
+                  />
                 </svg>
               </div>
               <div>
@@ -143,7 +234,10 @@ export default function Home() {
       <section id="featured" className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-2xl font-semibold">Featured Products</h2>
-          <Link to="/category/modular-kitchen" className="text-sm text-slate-600 hover:text-slate-800">
+          <Link
+            to="/category/modular-kitchen"
+            className="text-sm text-slate-600 hover:text-slate-800"
+          >
             View all
           </Link>
         </div>
@@ -157,7 +251,9 @@ export default function Home() {
                 data-idx={idx}
                 ref={(el) => (cardsRef.current[idx] = el)}
                 className={`bg-white rounded-xl overflow-hidden shadow-lg transform transition ${
-                  visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                  visible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-6"
                 }`}
                 style={{ transitionDelay: `${idx * 120}ms` }}
               >
@@ -168,7 +264,9 @@ export default function Home() {
                       alt={p.title}
                       className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-3 left-3 bg-amber-600 text-white text-xs px-2 py-1 rounded">Top pick</div>
+                    <div className="absolute top-3 left-3 bg-amber-600 text-white text-xs px-2 py-1 rounded">
+                      Top pick
+                    </div>
                     <div className="absolute right-3 bottom-3 bg-white/80 text-slate-800 text-sm px-2 py-1 rounded backdrop-blur-sm">
                       ₹{p.price?.toLocaleString?.() ?? p.price}
                     </div>
@@ -177,14 +275,21 @@ export default function Home() {
                   <div className="p-4">
                     <h3 className="font-semibold text-lg">{p.title}</h3>
                     <p className="text-sm text-slate-500 mt-2 line-clamp-2">
-                      {p.description || "High-quality material and finish. Click to see variants & preview."}
+                      {p.description ||
+                        "High-quality material and finish. Click to see variants & preview."}
                     </p>
 
                     <div className="mt-3 flex items-center justify-between">
-                      <div className="text-xs text-slate-500">{p.tags?.join?.(", ")}</div>
+                      <div className="text-xs text-slate-500">
+                        {p.tags?.join?.(", ")}
+                      </div>
                       <div className="flex items-center gap-2">
-                        <button className="text-sm px-3 py-1 bg-slate-100 rounded hover:bg-slate-200">View</button>
-                        <button className="text-sm px-3 py-1 bg-amber-600 text-white rounded hover:bg-amber-700">Quote</button>
+                        <button className="text-sm px-3 py-1 bg-slate-100 rounded hover:bg-slate-200">
+                          View
+                        </button>
+                        <button className="text-sm px-3 py-1 bg-amber-600 text-white rounded hover:bg-amber-700">
+                          Quote
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -201,32 +306,70 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="bg-white p-5 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1">
             <div className="text-amber-600 mb-3">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8v4l3 3" />
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M12 8v4l3 3"
+                />
               </svg>
             </div>
             <h4 className="font-semibold">Fast Turnaround</h4>
-            <p className="text-sm text-slate-500 mt-2">Mockups in 2–3 business days. Quick quotes & delivery scheduling.</p>
+            <p className="text-sm text-slate-500 mt-2">
+              Mockups in 2–3 business days. Quick quotes & delivery scheduling.
+            </p>
           </div>
 
           <div className="bg-white p-5 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1">
             <div className="text-amber-600 mb-3">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 7h18M3 12h18M3 17h18" />
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M3 7h18M3 12h18M3 17h18"
+                />
               </svg>
             </div>
             <h4 className="font-semibold">Wide Catalog</h4>
-            <p className="text-sm text-slate-500 mt-2">Kitchens, wall panels, ceiling systems, and showroom interiors — all in one place.</p>
+            <p className="text-sm text-slate-500 mt-2">
+              Kitchens, wall panels, ceiling systems, and showroom interiors —
+              all in one place.
+            </p>
           </div>
 
           <div className="bg-white p-5 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1">
             <div className="text-amber-600 mb-3">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 20l9-5-9-5-9 5 9 5z" />
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
+                  d="M12 20l9-5-9-5-9 5 9 5z"
+                />
               </svg>
             </div>
             <h4 className="font-semibold">Quality Guarantee</h4>
-            <p className="text-sm text-slate-500 mt-2">Premium materials and professional installation partners across the city.</p>
+            <p className="text-sm text-slate-500 mt-2">
+              Premium materials and professional installation partners across
+              the city.
+            </p>
           </div>
         </div>
       </section>

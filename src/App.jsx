@@ -6,6 +6,21 @@ import Category from "./pages/Category";
 import Product from "./pages/Product";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Contact from "./pages/Contact";
+
+const CATEGORIES = [
+  { title: "Modular Kitchen", slug: "modular-kitchen" },
+  { title: "3D Wall Panel", slug: "3d-wall-panel" },
+  { title: "PVC Ceiling", slug: "pvc-ceiling-panel" },
+  { title: "WPC Wall Panel", slug: "wpc-wall-panel" },
+  { title: "Charcoal Panel", slug: "charcoal-panel" },
+  { title: "Luxury Interiors", slug: "luxury-shop-interior" },
+  { title: "Home Interior", slug: "home-interior" },
+  { title: "Flat Interior", slug: "flat-interior" },
+  { title: "Home Renovation", slug: "home-renovation" },
+  { title: "Flat Renovation", slug: "flat-renovation" },
+  { title: "Floated Wall Panel", slug: "floated-wall-panel" },
+];
 
 export default function App() {
   const [open, setOpen] = useState(false);
@@ -26,8 +41,9 @@ export default function App() {
             </span>
           </Link>
 
-          {/* Desktop Menu */}
+          {/* Desktop menu: visible on md+ */}
           <div className="hidden md:flex items-center gap-6">
+            {/* Two primary quick links (kept as before) */}
             <Link
               to="/category/modular-kitchen"
               className="text-sm font-medium text-slate-600 hover:text-slate-900"
@@ -41,38 +57,111 @@ export default function App() {
             >
               Wall Panels
             </Link>
+
+            {/* Categories dropdown (desktop) */}
+            <div className="relative group">
+              <button className="text-sm font-medium text-slate-600 hover:text-slate-900 flex items-center gap-2">
+                Categories
+                <svg
+                  className="w-3 h-3"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+
+              <div
+                className="absolute left-0 mt-2 bg-white shadow-lg rounded-md p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 min-w-[220px]"
+                aria-hidden
+              >
+                {CATEGORIES.map((c) => (
+                  <Link
+                    key={c.slug}
+                    to={`/category/${c.slug}`}
+                    className="block px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded"
+                  >
+                    {c.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Contact */}
+            <Link
+              to="/contact"
+              className="ml-2 text-sm font-medium text-slate-600 hover:text-slate-900"
+            >
+              Contact Us
+            </Link>
           </div>
 
-          {/* Mobile Menu Icon */}
+          {/* Mobile menu button */}
           <button
             className="md:hidden text-2xl text-slate-700"
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Toggle menu"
           >
             {open ? <FaTimes /> : <FaBars />}
           </button>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Mobile collapsible menu */}
         <div
           className={`md:hidden bg-white shadow-inner transition-all duration-300 overflow-hidden ${
-            open ? "max-h-40" : "max-h-0"
+            open ? "max-h-[600px] ease-out" : "max-h-0 ease-in"
           }`}
         >
-          <div className="flex flex-col px-6 py-3 gap-4">
-            <Link
-              to="/category/modular-kitchen"
-              className="text-sm font-medium text-slate-600 hover:text-slate-900"
-              onClick={() => setOpen(false)}
-            >
-              Modular Kitchen
-            </Link>
+          <div className="px-6 py-4 border-t">
+            {/* Quick links row (keeps the 2 original links visible on mobile top) */}
+            <div className="flex gap-4 mb-3">
+              <Link
+                onClick={() => setOpen(false)}
+                to="/category/modular-kitchen"
+                className="text-slate-700 font-medium"
+              >
+                Modular Kitchen
+              </Link>
+              <Link
+                onClick={() => setOpen(false)}
+                to="/category/3d-wall-panel"
+                className="text-slate-700 font-medium"
+              >
+                Wall Panels
+              </Link>
+            </div>
 
+            {/* Full categories list */}
+            <h4 className="text-sm font-semibold text-slate-700 mb-2">
+              Categories
+            </h4>
+            <div className="flex flex-col gap-2 mb-3">
+              {CATEGORIES.map((c) => (
+                <Link
+                  key={c.slug}
+                  to={`/category/${c.slug}`}
+                  onClick={() => setOpen(false)}
+                  className="text-slate-700 px-3 py-2 rounded hover:bg-slate-50"
+                >
+                  {c.title}
+                </Link>
+              ))}
+            </div>
+
+            <hr className="my-3" />
+
+            {/* Contact link */}
             <Link
-              to="/category/3d-wall-panel"
-              className="text-sm font-medium text-slate-600 hover:text-slate-900"
               onClick={() => setOpen(false)}
+              to="/contact"
+              className="block text-slate-700 font-medium"
             >
-              Wall Panels
+              Contact Us
             </Link>
           </div>
         </div>
@@ -81,6 +170,7 @@ export default function App() {
       <main className="max-w-6xl mx-auto p-6">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/category/:slug" element={<Category />} />
           <Route path="/product/:slug" element={<Product />} />
         </Routes>

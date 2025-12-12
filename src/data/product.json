@@ -6,15 +6,9 @@
     "category": "Modular Kitchen",
     "tags": ["modular", "hdhmr", "kitchen", "premium"],
     "price": 72000,
-    "images": [
-      "/images/kitchen_oak_main.jpg",
-      "/images/kitchen_oak_side.jpg"
-    ],
+    "images": ["/images/kitchen_oak_main.jpg", "/images/kitchen_oak_side.jpg"],
     "views": {
-      "oak": [
-        "/images/kitchen_oak_main.jpg",
-        "/images/kitchen_oak_close.jpg"
-      ],
+      "oak": ["/images/kitchen_oak_main.jpg", "/images/kitchen_oak_close.jpg"],
       "white": [
         "/images/kitchen_white_main.jpg",
         "/images/kitchen_white_side.jpg"
@@ -38,14 +32,8 @@
       "/images/wood_kitchen_side.jpg"
     ],
     "views": {
-      "walnut": [
-        "/images/wood_walnut_1.jpg",
-        "/images/wood_walnut_2.jpg"
-      ],
-      "mahogany": [
-        "/images/wood_mahogany_1.jpg",
-        "/images/wood_mahogany_2.jpg"
-      ]
+      "walnut": ["/images/wood_walnut_1.jpg", "/images/wood_walnut_2.jpg"],
+      "mahogany": ["/images/wood_mahogany_1.jpg", "/images/wood_mahogany_2.jpg"]
     },
     "gltf": {
       "walnut": "/models/wood_kitchen_walnut.glb",
@@ -60,9 +48,7 @@
     "category": "Aluminium Modular Kitchen",
     "tags": ["aluminium", "modular", "kitchen"],
     "price": 58000,
-    "images": [
-      "/images/aluminium_main.jpg"
-    ],
+    "images": ["/images/aluminium_main.jpg"],
     "views": {}
   },
 
@@ -73,19 +59,10 @@
     "category": "Stainless Steel Kitchen",
     "tags": ["steel", "stainless", "modular", "luxury"],
     "price": 95000,
-    "images": [
-      "/images/steel_kitchen_1.jpg",
-      "/images/steel_kitchen_2.jpg"
-    ],
+    "images": ["/images/steel_kitchen_1.jpg", "/images/steel_kitchen_2.jpg"],
     "views": {
-      "matte": [
-        "/images/steel_matte_1.jpg",
-        "/images/steel_matte_2.jpg"
-      ],
-      "gloss": [
-        "/images/steel_gloss_1.jpg",
-        "/images/steel_gloss_2.jpg"
-      ]
+      "matte": ["/images/steel_matte_1.jpg", "/images/steel_matte_2.jpg"],
+      "gloss": ["/images/steel_gloss_1.jpg", "/images/steel_gloss_2.jpg"]
     },
     "gltf": "/models/steel_kitchen.glb"
   },
@@ -97,10 +74,7 @@
     "category": "PVC Wall Panel",
     "tags": ["pvc", "wall-panel", "wood"],
     "price": 350,
-    "images": [
-      "/images/pvc_panel_wood_1.jpg",
-      "/images/pvc_panel_wood_2.jpg"
-    ],
+    "images": ["/images/pvc_panel_wood_1.jpg", "/images/pvc_panel_wood_2.jpg"],
     "views": {}
   },
 
@@ -111,10 +85,7 @@
     "category": "WPC Wall Panel",
     "tags": ["wpc", "wall-panel", "marble"],
     "price": 420,
-    "images": [
-      "/images/wpc_marble_1.jpg",
-      "/images/wpc_marble_2.jpg"
-    ],
+    "images": ["/images/wpc_marble_1.jpg", "/images/wpc_marble_2.jpg"],
     "views": {}
   },
 
@@ -125,10 +96,7 @@
     "category": "Charcoal Panel",
     "tags": ["charcoal", "3d-panel", "luxury"],
     "price": 780,
-    "images": [
-      "/images/charcoal_black_1.jpg",
-      "/images/charcoal_black_2.jpg"
-    ],
+    "images": ["/images/charcoal_black_1.jpg", "/images/charcoal_black_2.jpg"],
     "views": {}
   },
 
@@ -139,10 +107,7 @@
     "category": "3D Wall Panel",
     "tags": ["3d", "wall-panel", "luxury"],
     "price": 1550,
-    "images": [
-      "/images/3d_gold_1.jpg",
-      "/images/3d_gold_2.jpg"
-    ],
+    "images": ["/images/3d_gold_1.jpg", "/images/3d_gold_2.jpg"],
     "views": {}
   },
 
@@ -153,10 +118,7 @@
     "category": "Luxury Shop Interior",
     "tags": ["luxury", "shop", "interior"],
     "price": 150000,
-    "images": [
-      "/images/lux_shop_1.jpg",
-      "/images/lux_shop_2.jpg"
-    ],
+    "images": ["/images/lux_shop_1.jpg", "/images/lux_shop_2.jpg"],
     "views": {}
   },
 
@@ -167,10 +129,65 @@
     "category": "Flat Interior",
     "tags": ["flat", "interior", "2bhk", "modern"],
     "price": 165000,
-    "images": [
-      "/images/flat_modern_1.jpg",
-      "/images/flat_modern_2.jpg"
-    ],
+    "images": ["/images/flat_modern_1.jpg", "/images/flat_modern_2.jpg"],
     "views": {}
+  },
+  {
+    "id": 11,
+    "title": "Complete Home Interior Package",
+    "slug": "complete-home-interior",
+    "category": "Home Interior",
+    "tags": ["home", "interior", "package"],
+    "price": 85000,
+    "images": [
+      "/images/home_interior_main.jpg",
+      "/images/home_interior_side.jpg"
+    ],
+    "views": {},
+    "gltf": {}
+  },
+  {
+    "id": 12,
+    "title": "Flat Interior – Modern 2BHK (Premium)",
+    "slug": "flat-interior-modern-2bhk-premium",
+    "category": "Flat Interior",
+    "tags": ["flat", "interior", "2bhk"],
+    "price": 165000,
+    "images": ["/images/flat_interior_main.jpg"],
+    "views": {},
+    "gltf": {}
+  },
+  {
+    "id": 13,
+    "title": "Home Renovation Package – Basic",
+    "slug": "home-renovation-basic",
+    "category": "Home Renovation",
+    "tags": ["renovation", "home", "basic"],
+    "price": 45000,
+    "images": ["/images/home_renovation_main.jpg"],
+    "views": {},
+    "gltf": {}
+  },
+  {
+    "id": 14,
+    "title": "Flat Renovation – Kitchen + Living",
+    "slug": "flat-renovation-kitchen-living",
+    "category": "Flat Renovation",
+    "tags": ["renovation", "flat", "kitchen"],
+    "price": 75000,
+    "images": ["/images/flat_reno_main.jpg"],
+    "views": {},
+    "gltf": {}
+  },
+  {
+    "id": 15,
+    "title": "Floated Wall Panel – Designer Series",
+    "slug": "floated-wall-panel-designer",
+    "category": "Floated Wall Panel",
+    "tags": ["floated", "wall-panel", "designer"],
+    "price": 2200,
+    "images": ["/images/floated_panel_main.jpg"],
+    "views": {},
+    "gltf": {}
   }
 ]
