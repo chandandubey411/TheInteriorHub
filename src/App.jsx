@@ -176,8 +176,97 @@ export default function App() {
         </Routes>
       </main>
 
-      <footer className="mt-12 py-6 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Home Interio
+      <footer className="mt-16 bg-slate-900 text-slate-300">
+        <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Logo + About */}
+          <div>
+            <h2 className="text-xl font-semibold text-white">
+              THE INTERIOR HUB
+            </h2>
+            <p className="mt-3 text-sm text-slate-400 leading-relaxed">
+              Premium modular kitchens, wall panels, interiors & renovation
+              services with high-quality craftsmanship.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-medium text-white mb-3">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/" className="hover:text-white">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/modular-kitchen"
+                  className="hover:text-white"
+                >
+                  Modular Kitchen
+                </Link>
+              </li>
+              <li>
+                <Link to="/category/3d-wall-panel" className="hover:text-white">
+                  Wall Panels
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-white">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Categories */}
+          <div>
+            <h3 className="text-lg font-medium text-white mb-3">Categories</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/category/home-interior" className="hover:text-white">
+                  Home Interior
+                </Link>
+              </li>
+              <li>
+                <Link to="/category/flat-interior" className="hover:text-white">
+                  Flat Interior
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/home-renovation"
+                  className="hover:text-white"
+                >
+                  Home Renovation
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/category/floated-wall-panel"
+                  className="hover:text-white"
+                >
+                  Floated Wall Panel
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg font-medium text-white mb-3">Contact</h3>
+            <ul className="space-y-2 text-sm text-slate-400">
+              <li>📞 +91 99999 93798</li>
+              <li>✉️ Shoaibjmd91@gmail.com</li>
+              <li>📍 C-28, Parwana Rd, OLd Govindpura, Krishna Nagar, New Delhi, Delhi, 110051</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-slate-800 py-4 text-center text-xs text-slate-500">
+          © {new Date().getFullYear()} THE INTERIOR HUB — All Rights Reserved.
+        </div>
       </footer>
     </div>
   );
