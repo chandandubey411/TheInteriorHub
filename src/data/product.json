@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "title": "HDHMR Modular Kitchen – Premium Oak Finish",
+    "slug": "hdhmr-modular-kitchen-oak",
+    "category": "Modular Kitchen",
+    "tags": ["modular", "hdhmr", "kitchen", "premium"],
+    "price": 72000,
+    "images": [
+      "/images/kitchen_oak_main.jpg",
+      "/images/kitchen_oak_side.jpg"
+    ],
+    "views": {
+      "oak": [
+        "/images/kitchen_oak_main.jpg",
+        "/images/kitchen_oak_close.jpg"
+      ],
+      "white": [
+        "/images/kitchen_white_main.jpg",
+        "/images/kitchen_white_side.jpg"
+      ]
+    },
+    "gltf": {
+      "oak": "/models/kitchen_oak.glb",
+      "white": "/models/kitchen_white.glb"
+    }
+  },
+
+  {
+    "id": 2,
+    "title": "Wooden Modular Kitchen – Classic Walnut",
+    "slug": "wooden-modular-kitchen-walnut",
+    "category": "Wooden Modular Kitchen",
+    "tags": ["wooden", "modular", "walnut", "kitchen"],
+    "price": 65000,
+    "images": [
+      "/images/wood_kitchen_main.jpg",
+      "/images/wood_kitchen_side.jpg"
+    ],
+    "views": {
+      "walnut": [
+        "/images/wood_walnut_1.jpg",
+        "/images/wood_walnut_2.jpg"
+      ],
+      "mahogany": [
+        "/images/wood_mahogany_1.jpg",
+        "/images/wood_mahogany_2.jpg"
+      ]
+    },
+    "gltf": {
+      "walnut": "/models/wood_kitchen_walnut.glb",
+      "mahogany": "/models/wood_kitchen_mahogany.glb"
+    }
+  },
+
+  {
+    "id": 3,
+    "title": "Aluminium Modular Kitchen – Matte Grey",
+    "slug": "aluminium-modular-kitchen-grey",
+    "category": "Aluminium Modular Kitchen",
+    "tags": ["aluminium", "modular", "kitchen"],
+    "price": 58000,
+    "images": [
+      "/images/aluminium_main.jpg"
+    ],
+    "views": {}
+  },
+
+  {
+    "id": 4,
+    "title": "Stainless Steel Modular Kitchen – Luxury Series",
+    "slug": "stainless-steel-kitchen-luxury",
+    "category": "Stainless Steel Kitchen",
+    "tags": ["steel", "stainless", "modular", "luxury"],
+    "price": 95000,
+    "images": [
+      "/images/steel_kitchen_1.jpg",
+      "/images/steel_kitchen_2.jpg"
+    ],
+    "views": {
+      "matte": [
+        "/images/steel_matte_1.jpg",
+        "/images/steel_matte_2.jpg"
+      ],
+      "gloss": [
+        "/images/steel_gloss_1.jpg",
+        "/images/steel_gloss_2.jpg"
+      ]
+    },
+    "gltf": "/models/steel_kitchen.glb"
+  },
+
+  {
+    "id": 5,
+    "title": "PVC Wall Panel – Wooden Texture",
+    "slug": "pvc-wall-panel-wood",
+    "category": "PVC Wall Panel",
+    "tags": ["pvc", "wall-panel", "wood"],
+    "price": 350,
+    "images": [
+      "/images/pvc_panel_wood_1.jpg",
+      "/images/pvc_panel_wood_2.jpg"
+    ],
+    "views": {}
+  },
+
+  {
+    "id": 6,
+    "title": "WPC Wall Panel – Marble Shade",
+    "slug": "wpc-wall-panel-marble",
+    "category": "WPC Wall Panel",
+    "tags": ["wpc", "wall-panel", "marble"],
+    "price": 420,
+    "images": [
+      "/images/wpc_marble_1.jpg",
+      "/images/wpc_marble_2.jpg"
+    ],
+    "views": {}
+  },
+
+  {
+    "id": 7,
+    "title": "Charcoal Panel – Black Wave 3D",
+    "slug": "charcoal-panel-black-wave",
+    "category": "Charcoal Panel",
+    "tags": ["charcoal", "3d-panel", "luxury"],
+    "price": 780,
+    "images": [
+      "/images/charcoal_black_1.jpg",
+      "/images/charcoal_black_2.jpg"
+    ],
+    "views": {}
+  },
+
+  {
+    "id": 8,
+    "title": "3D Wall Panel – Luxury Gold Pattern",
+    "slug": "3d-wall-panel-gold",
+    "category": "3D Wall Panel",
+    "tags": ["3d", "wall-panel", "luxury"],
+    "price": 1550,
+    "images": [
+      "/images/3d_gold_1.jpg",
+      "/images/3d_gold_2.jpg"
+    ],
+    "views": {}
+  },
+
+  {
+    "id": 9,
+    "title": "Luxury Shop Interior Package",
+    "slug": "luxury-shop-interior",
+    "category": "Luxury Shop Interior",
+    "tags": ["luxury", "shop", "interior"],
+    "price": 150000,
+    "images": [
+      "/images/lux_shop_1.jpg",
+      "/images/lux_shop_2.jpg"
+    ],
+    "views": {}
+  },
+
+  {
+    "id": 10,
+    "title": "Flat Interior – Modern 2BHK Design",
+    "slug": "flat-interior-2bhk-modern",
+    "category": "Flat Interior",
+    "tags": ["flat", "interior", "2bhk", "modern"],
+    "price": 165000,
+    "images": [
+      "/images/flat_modern_1.jpg",
+      "/images/flat_modern_2.jpg"
+    ],
+    "views": {}
+  }
+]

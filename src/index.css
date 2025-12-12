@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- add at bottom of src/index.css ---------- */
+
+/* floating accent animation */
+@keyframes floaty {
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-10px) scale(1.03); }
+  100% { transform: translateY(0px) scale(1); }
+}
+
+.animate-float {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+/* subtle card entrance - we'll rely on Tailwind utility classes for transition,
+   but ensure initial transform opacity transitions look smooth */
+.opacity-0 { opacity: 0; }
+.opacity-100 { opacity: 1; }
+
+/* small utility: limit text lines if tailwind line-clamp plugin not present */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
