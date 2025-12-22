@@ -210,7 +210,7 @@ export default function Visualizer({ product, variant = null }) {
       </div>
 
       {imgs && imgs.length > 1 && (
-        <div className="mt-3 grid grid-cols-4 gap-2 sm:grid-cols-6 lg:grid-cols-8">
+        <div className="mt-3 grid grid-cols-4 gap-2 sm:grid-cols-6 lg:grid-cols-8 ">
           {imgs.map((t, idx) => (
             <button key={t + idx} onClick={() => setMainIndex(idx)} className={`overflow-hidden rounded-md border transition ${ mainIndex === idx ? "ring-2 ring-amber-300" : "border-slate-200" }`} aria-label={`Select view ${idx + 1}`}>
               <img src={t} alt={`${product?.title || "product"} thumb ${idx + 1}`} className="w-full h-20 object-cover" loading="lazy" />

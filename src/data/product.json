@@ -74,7 +74,7 @@
     "category": "PVC Wall Panel",
     "tags": ["pvc", "wall-panel", "wood"],
     "price": 350,
-    "images": ["/images/pvc_panel_wood_1.jpg", "/images/pvc_panel_wood_2.jpg"],
+    "images": ["/images/pvc_panel_wood_1.jpg", "/images/pvc_panel_wood_2.jpg" , "/images/pvcwallpanel/pvc1.jpeg", "/images/pvcwallpanel/pvc2.jpeg", "/images/pvcwallpanel/pvc3.jpeg", "/images/pvcwallpanel/pvc4.jpeg", "/images/pvcwallpanel/pvc5.jpeg", "/images/pvcwallpanel/pvc6.jpeg", "/images/pvcwallpanel/pvc7.jpeg", "/images/pvcwallpanel/pvc8.jpeg", "/images/pvcwallpanel/pvc9.jpeg", "/images/pvcwallpanel/pvc10.jpeg", "/images/pvcwallpanel/pvc11.jpeg"],
     "views": {}
   },
 
@@ -85,7 +85,7 @@
     "category": "WPC Wall Panel",
     "tags": ["wpc", "wall-panel", "marble"],
     "price": 420,
-    "images": ["/images/wpc_marble_1.jpg", "/images/wpc_marble_2.jpg"],
+    "images": ["/images/wpc_marble_1.jpg", "/images/wpc_marble_2.jpg" , "/images/wpcpanel/wpc1.jpeg", "/images/wpcpanel/wpc2.jpeg", "/images/wpcpanel/wpc3.jpeg", "/images/wpcpanel/wpc4.jpeg", "/images/wpcpanel/wpc5.jpeg", "/images/wpcpanel/wpc6.jpeg", "/images/wpcpanel/wpc7.jpeg", "/images/wpcpanel/wpc8.jpeg", "/images/wpcpanel/wpc9.jpeg", "/images/wpcpanel/wpc10.jpeg", "/images/wpcpanel/wpc11.jpeg", "/images/wpcpanel/wpc12.jpeg"],
     "views": {}
   },
 
@@ -96,7 +96,7 @@
     "category": "Charcoal Panel",
     "tags": ["charcoal", "3d-panel", "luxury"],
     "price": 780,
-    "images": ["/images/charcoal_black_1.jpg", "/images/charcoal_black_2.jpg"],
+    "images": ["/images/charcoal_black_1.jpg", "/images/charcoal_black_2.jpg", "/images/charcoal/charcoal1.jpeg", "/images/charcoal/charcoal2.jpeg", "/images/charcoal/charcoal3.jpeg", "/images/charcoal/charcoal4.jpeg", "/images/charcoal/charcoal5.jpeg", "/images/charcoal/charcoal6.jpeg", "/images/charcoal/charcoal7.jpeg", "/images/charcoal/charcoal8.jpeg", "/images/charcoal/charcoal9.jpeg", "/images/charcoal/charcoal10.jpeg", "/images/charcoal/charcoal11.jpeg", "/images/charcoal/charcoal12.jpeg", "/images/charcoal/charcoal13.jpeg", "/images/charcoal/charcoal14.jpeg", "/images/charcoal/charcoal15.jpeg", "/images/charcoal/charcoal16.jpeg", "/images/charcoal/charcoal17.jpeg", "/images/charcoal/charcoal18.jpeg", "/images/charcoal/charcoal19.jpeg", "/images/charcoal/charcoal20.jpeg", "/images/charcoal/charcoal21.jpeg", "/images/charcoal/charcoal22.jpeg"],
     "views": {}
   },
 
@@ -107,7 +107,7 @@
     "category": "3D Wall Panel",
     "tags": ["3d", "wall-panel", "luxury"],
     "price": 1550,
-    "images": ["/images/3d_gold_1.jpg", "/images/3d_gold_2.jpg"],
+    "images": ["/images/3d_gold_1.jpg", "/images/3d_gold_2.jpg", "/images/3dpanel/3d1.jpeg", "/images/3dpanel/3d2.jpeg","/images/3dpanel/3d3.jpeg", "/images/3dpanel/3d4.jpeg","/images/3dpanel/3d5.jpeg","/images/3dpanel/3d6.jpeg","/images/3dpanel/3d7.jpeg","/images/3dpanel/3d8.jpeg","/images/3dpanel/3d9.jpeg","/images/3dpanel/3d10.jpeg", "/images/3dpanel/3d11.jpeg","/images/3dpanel/3d12.jpeg"],
     "views": {}
   },
 
@@ -129,7 +129,7 @@
     "category": "Flat Interior",
     "tags": ["flat", "interior", "2bhk", "modern"],
     "price": 165000,
-    "images": ["/images/flat_modern_1.jpg", "/images/flat_modern_2.jpg"],
+    "images": ["/images/flat_modern_1.jpg", "/images/flat_modern_2.jpg", "/images/flat/flat1.jpg", "/images/flat/flat2.jpg", "/images/flat/flat3.jpg", "/images/flat/flat4.jpg", "/images/flat/flat5.jpg", "/images/flat/flat6.jpg", "/images/flat/flat7.jpg", "/images/flat/flat8.jpg"],
     "views": {}
   },
   {

@@ -7,6 +7,7 @@ import Product from "./pages/Product";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 const CATEGORIES = [
   { title: "Modular Kitchen", slug: "modular-kitchen" },
@@ -92,6 +93,13 @@ export default function App() {
               </div>
             </div>
 
+            <Link
+              to="/blog"
+              className="text-sm font-medium text-slate-600 hover:text-slate-900"
+            >
+              Blog
+            </Link>
+
             {/* Contact */}
             <Link
               to="/contact"
@@ -111,58 +119,100 @@ export default function App() {
           </button>
         </div>
 
-        {/* Mobile collapsible menu */}
+        {/* Mobile Menu */}
         <div
-          className={`md:hidden bg-white shadow-inner transition-all duration-300 overflow-hidden ${
-            open ? "max-h-[600px] ease-out" : "max-h-0 ease-in"
+          className={`md:hidden fixed inset-0 bg-black/40 transition-opacity duration-300 ${
+            open ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
+          onClick={() => setOpen(false)}
         >
-          <div className="px-6 py-4 border-t">
-            {/* Quick links row (keeps the 2 original links visible on mobile top) */}
-            <div className="flex gap-4 mb-3">
-              <Link
+          <div
+            className={`absolute top-0 right-0 h-full w-[85%] max-w-sm bg-white shadow-xl transform transition-transform duration-300 ${
+              open ? "translate-x-0" : "translate-x-full"
+            }`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Header */}
+            <div className="flex items-center justify-between px-5 py-4 border-b">
+              <span className="font-semibold text-lg text-slate-800">Menu</span>
+              <button
                 onClick={() => setOpen(false)}
-                to="/category/modular-kitchen"
-                className="text-slate-700 font-medium"
+                className="text-2xl text-slate-700"
               >
-                Modular Kitchen
-              </Link>
-              <Link
-                onClick={() => setOpen(false)}
-                to="/category/3d-wall-panel"
-                className="text-slate-700 font-medium"
-              >
-                Wall Panels
-              </Link>
+                <FaTimes />
+              </button>
             </div>
 
-            {/* Full categories list */}
-            <h4 className="text-sm font-semibold text-slate-700 mb-2">
-              Categories
-            </h4>
-            <div className="flex flex-col gap-2 mb-3">
-              {CATEGORIES.map((c) => (
+            {/* Content */}
+            <div className="px-5 py-4 space-y-6 overflow-y-auto h-[calc(100vh-64px)]">
+              {/* Primary Links */}
+              <div className="space-y-3">
                 <Link
-                  key={c.slug}
-                  to={`/category/${c.slug}`}
+                  to="/"
                   onClick={() => setOpen(false)}
-                  className="text-slate-700 px-3 py-2 rounded hover:bg-slate-50"
+                  className="block text-slate-800 font-medium"
                 >
-                  {c.title}
+                  Home
                 </Link>
-              ))}
+
+                <Link
+                  to="/category/modular-kitchen"
+                  onClick={() => setOpen(false)}
+                  className="block text-slate-800 font-medium"
+                >
+                  Modular Kitchen
+                </Link>
+
+                <Link
+                  to="/category/3d-wall-panel"
+                  onClick={() => setOpen(false)}
+                  className="block text-slate-800 font-medium"
+                >
+                  Wall Panels
+                </Link>
+
+                <Link
+                  to="/blog"
+                  onClick={() => setOpen(false)}
+                  className="block text-slate-800 font-medium"
+                >
+                  Blog
+                </Link>
+              </div>
+
+              <hr />
+
+              {/* Categories */}
+              <div>
+                <h4 className="text-sm font-semibold text-slate-500 mb-3">
+                  All Categories
+                </h4>
+
+                <div className="space-y-2">
+                  {CATEGORIES.map((c) => (
+                    <Link
+                      key={c.slug}
+                      to={`/category/${c.slug}`}
+                      onClick={() => setOpen(false)}
+                      className="block px-3 py-2 rounded-md bg-slate-50 text-slate-700 hover:bg-slate-100"
+                    >
+                      {c.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <hr />
+
+              {/* Contact */}
+              <Link
+                to="/contact"
+                onClick={() => setOpen(false)}
+                className="block text-center bg-amber-600 text-white py-3 rounded-lg font-medium"
+              >
+                Contact Us
+              </Link>
             </div>
-
-            <hr className="my-3" />
-
-            {/* Contact link */}
-            <Link
-              onClick={() => setOpen(false)}
-              to="/contact"
-              className="block text-slate-700 font-medium"
-            >
-              Contact Us
-            </Link>
           </div>
         </div>
       </nav>
@@ -171,6 +221,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/category/:slug" element={<Category />} />
           <Route path="/product/:slug" element={<Product />} />
         </Routes>
@@ -209,6 +260,11 @@ export default function App() {
               <li>
                 <Link to="/category/3d-wall-panel" className="hover:text-white">
                   Wall Panels
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="hover:text-white">
+                  Blogs
                 </Link>
               </li>
               <li>
@@ -258,7 +314,10 @@ export default function App() {
             <ul className="space-y-2 text-sm text-slate-400">
               <li>📞 +91 99999 93798</li>
               <li>✉️ Shoaibjmd91@gmail.com</li>
-              <li>📍 C-28, Parwana Rd, OLd Govindpura, Krishna Nagar, New Delhi, Delhi, 110051</li>
+              <li>
+                📍 C-28, Parwana Rd, OLd Govindpura, Krishna Nagar, New Delhi,
+                Delhi, 110051
+              </li>
             </ul>
           </div>
         </div>

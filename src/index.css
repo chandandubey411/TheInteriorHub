@@ -27,3 +27,12 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* Tailwind custom utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

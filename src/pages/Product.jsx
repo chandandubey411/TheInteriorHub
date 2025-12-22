@@ -323,7 +323,7 @@ export default function ProductPage() {
                   )}
 
                   {/* Thumbnails list */}
-                  <div className="grid grid-cols-3 gap-2 lg:grid-cols-1">
+                  <div className="hidden md:grid grid-cols-3 gap-2 lg:grid-cols-1 max-h-[500px] overflow-y-scroll no-scrollbar">
                     {(images.length ? images : product.images || []).map(
                       (img, idx) => (
                         <button
