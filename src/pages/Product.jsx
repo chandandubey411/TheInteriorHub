@@ -11,7 +11,7 @@ import html2canvas from "html2canvas";
  - Keeps the same UI and modal; adds submitting state + message
 */
 
-const WEB3FORMS_KEY = "4c31e106-ed27-43ec-9811-03a496832d22";
+const WEB3FORMS_KEY = "b3325bdb-5680-4f2c-a73e-4e2eb3a98fd2";
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 export default function ProductPage() {

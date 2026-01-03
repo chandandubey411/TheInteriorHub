@@ -227,6 +227,16 @@ export default function App() {
         </Routes>
       </main>
 
+      <a
+        href="https://wa.me/919999993798"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-5 right-5 z-50 flex items-center justify-center w-14 h-14 rounded-full text-white md:text-4xl text-3xl shadow-lg transition-transform duration-300 hover:scale-110"
+        aria-label="Chat on WhatsApp"
+      >
+        💬
+      </a>
+
       <footer className="mt-16 bg-slate-900 text-slate-300">
         <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo + About */}
